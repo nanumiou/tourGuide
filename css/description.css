@@ -1,0 +1,99 @@
+html,
+body {
+    margin: 0;
+    height: 100%;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    flex: 1;
+    background-color: #1C1C1C;
+    color: white;
+    text-align: center;
+    font-size: 6vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: arial;
+}
+
+.header_item {
+    flex: 10;
+}
+
+.article {
+    flex: 7;
+    overflow-y: scroll;
+    padding: 13px;
+    font-size: 1.2em;
+    animation: fadeIn 1s linear;
+    color: #1C1C1C;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.footer {
+    flex: 2;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_item {
+    flex: 10;
+    padding: 10px;
+    border-top: 1px solid #c1c1c1;
+}
+
+audio {
+    width: 100%;
+    display: block;
+}
+
+.header_1 {
+    color: gray;
+    font-family: arial;
+    padding-bottom: 5px;
+}
+
+.chat-btn {
+    animation: fadeIn 1s linear;
+    opacity: 0.8;
+    width: 50px;
+    height: 50px;
+    background-color: #2E2E2E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: fixed;
+    right: 20px;
+    bottom: 170px;
+    font-size: 20px;
+    color: #523737;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+    transition: color .3s, background .3s, transform .5s ease-in-out;
+}
+
+.chat-btn:hover {
+    color: white;
+    background: #523737;
+    transform: rotateY(1turn);
+}
+
